@@ -1,0 +1,28 @@
+%h1 Editing merchant
+- form_for(@merchant) do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p
+    = f.label :description
+    %br/
+    = f.text_area :description
+  %p
+    = f.label :city
+    %br/
+    = f.text_field :city
+  %p
+    = f.label :state
+    %br/
+    = f.text_field :state
+  %p
+    = f.label :zip_code
+    %br/
+    = f.text_field :zip_code
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @merchant
+|
+\#{link_to 'Back', merchants_path}

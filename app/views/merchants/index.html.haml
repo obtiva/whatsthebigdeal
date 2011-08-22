@@ -1,0 +1,20 @@
+%h1 Listing merchants
+%table
+  %tr
+    %th Name
+    %th Description
+    %th City
+    %th State
+    %th Zip code
+  - @merchants.each do |merchant|
+    %tr
+      %td= h merchant.name
+      %td= h merchant.description
+      %td= h merchant.city
+      %td= h merchant.state
+      %td= h merchant.zip_code
+      %td= link_to 'Show', merchant
+      %td= link_to 'Edit', edit_merchant_path(merchant)
+      %td= link_to 'Destroy', merchant, :confirm => 'Are you sure?', :method => :delete
+%br/
+= link_to 'New merchant', new_merchant_path

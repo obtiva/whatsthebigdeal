@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "/merchants/show.html.erb" do
+describe "/merchants/show.html.haml" do
   include MerchantsHelper
   before(:each) do
     assigns[:merchant] = @merchant = stub_model(Merchant,

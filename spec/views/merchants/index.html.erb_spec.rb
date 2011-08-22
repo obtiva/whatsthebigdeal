@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "/merchants/index.html.erb" do
+describe "/merchants/index.html.haml" do
   include MerchantsHelper
 
   before(:each) do

@@ -1,0 +1,241 @@
+.bundle
+db/*.sqlite3
+db/sphinx/development/*
+db/sphinx/test/*
+log/*.log*
+log/*.pid
+log/*.db*
+tmp/
+.svn
+
+# Rails
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+*.log
+tmp/**/*
+config/database.yml
+turbulence/**
+rerun.txt
+spec/fixtures/images
+config/*.sphinx.conf
+
+# Documentation
+doc/api
+doc/app
+doc/*
+.yardoc
+.yardopts
+
+# Public Uploads
+public/system/*
+public/themes/*
+
+# Public Cache
+public/javascripts/cache
+public/stylesheets/cache
+public/stylesheets/compiled
+
+# Vendor Cache
+vendor/cache
+
+# Acts as Indexed
+index/**/*
+
+# Refinery Specific
+*.tmproj
+*.autobackupbyrefinery.*
+/refinerycms-*.gem
+.autotest
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# NetBeans
+nbproject
+
+# Eclipse
+.project
+
+# Redcar
+.redcar
+
+# Rubinius
+*.rbc
+
+# Vim
+*.swp
+*.swo
+tags
+
+# RubyMine
+.idea
+
+# Backup
+*~
+
+# Capybara Bug
+capybara-*html
+
+# sass
+.sass-cache
+.sass-cache/*
+
+#rvm
+.rvmrc
+.rvmrc.*
+
+# Rails
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+*.log
+tmp/**/*
+
+# Documentation
+doc/api
+doc/app
+doc/*
+.yardoc
+.yardopts
+
+# Public Uploads
+public/system/*
+public/themes/*
+
+# Public Cache
+public/javascripts/cache
+public/stylesheets/cache
+
+# Vendor Cache
+vendor/cache
+
+# Acts as Indexed
+index/**/*
+
+# Refinery Specific
+*.tmproj
+*.autobackupbyrefinery.*
+/refinerycms-*.gem
+.autotest
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# NetBeans
+nbproject
+
+# Eclipse
+.project
+
+# Redcar
+.redcar
+
+# Rubinius
+*.rbc
+
+# Vim
+*.swp
+*.swo
+
+# RubyMine
+.idea
+
+# Backup
+*~
+
+# Capybara Bug
+capybara-*html
+
+# sass
+.sass-cache
+.sass-cache/*
+
+#rvm
+.rvmrc
+.rvmrc.*
+
+#local footnotes config
+config/initializers/footnotes.local.rb
+# Rails
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+*.log
+tmp
+tmp/**/*
+
+# Documentation
+doc/api
+doc/app
+.yardoc
+.yardopts
+
+# Public Uploads
+public/system/*
+public/themes/*
+
+# Public Cache
+public/javascripts/cache
+public/stylesheets/cache
+
+# Vendor Cache
+vendor/cache
+
+# Acts as Indexed
+index/**/*
+
+# Refinery Specific
+*.tmproj
+*.autobackupbyrefinery.*
+refinerycms-*.gem
+.autotest
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# NetBeans
+nbproject
+
+# Eclipse
+.project
+
+# Redcar
+.redcar
+
+# Rubinius
+*.rbc
+
+# Vim
+*.swp
+*.swo
+
+# RubyMine
+.idea
+
+# E-texteditor
+.eprj
+
+# Backup
+*~
+
+# Capybara Bug
+capybara-*html
+
+# sass
+.sass-cache
+.sass-cache/*
+
+#rvm
+.rvmrc
+.rvmrc.*
+

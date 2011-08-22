@@ -2,7 +2,7 @@ class MerchantsController < ApplicationController
   # GET /merchants
   # GET /merchants.xml
   def index
-    @merchants = Merchant.all
+    @merchants = Merchant.by_name
 
     respond_to do |format|
       format.html # index.html.erb

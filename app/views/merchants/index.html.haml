@@ -7,12 +7,12 @@
     %th State
     %th Zip code
   - @merchants.each do |merchant|
-    %tr
-      %td= h merchant.name
-      %td= h merchant.description
-      %td= h merchant.city
-      %td= h merchant.state
-      %td= h merchant.zip_code
+    %tr.merchant_row
+      %td.merchant_name= h merchant.name
+      %td.merchant_description= h merchant.description
+      %td.merchant_city= h merchant.city
+      %td.merchant_state= h merchant.state
+      %td.merchant_zip_code= h merchant.zip_code
       %td= link_to 'Show', merchant
       %td= link_to 'Edit', edit_merchant_path(merchant)
       %td= link_to 'Destroy', merchant, :confirm => 'Are you sure?', :method => :delete

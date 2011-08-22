@@ -14,4 +14,10 @@ describe Merchant do
   it "should create a new instance given valid attributes" do
     Merchant.create!(@valid_attributes)
   end
+  
+  it "should sort by name" do
+    Merchant.create!(:name => "Zazz")
+    Merchant.create!(:name => "Alpha")
+    Merchant.by_name.all.map(&:name).should == ["Alpha", "Zazz"]
+  end
 end

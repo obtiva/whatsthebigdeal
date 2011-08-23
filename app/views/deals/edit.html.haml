@@ -1,0 +1,36 @@
+%h1 Editing deal
+- form_for(@deal) do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p
+    = f.label :description
+    %br/
+    = f.text_area :description
+  %p
+    = f.label :merchant
+    %br/
+    = f.text_field :merchant
+  %p
+    = f.label :start_date
+    %br/
+    = f.date_select :start_date
+  %p
+    = f.label :end_date
+    %br/
+    = f.date_select :end_date
+  %p
+    = f.label :deal_price
+    %br/
+    = f.text_field :deal_price
+  %p
+    = f.label :normal_price
+    %br/
+    = f.text_field :normal_price
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @deal
+|
+\#{link_to 'Back', deals_path}

@@ -9,7 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110822215951) do
+ActiveRecord::Schema.define(:version => 20110823113412) do
+
+  create_table "deals", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "merchant_id"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.float    "deal_price"
+    t.float    "normal_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "merchants", :force => true do |t|
     t.string   "name"
